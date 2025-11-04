@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EduTrack - Student Progress Tracker</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+  }
+
+  header {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 25px 15px;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  header p {
+    font-size: 1.2em;
+    margin-top: 8px;
+  }
+
+  section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #34495e;
+  }
+
+  p.intro {
+    text-align: center;
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+  }
+
+  .feature-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    width: 280px;
+    padding: 25px 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .feature-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #2980b9;
+    font-size: 1.4em;
+  }
+
+  .feature-card p {
+    font-size: 1em;
+    color: #555b6e;
+    line-height: 1.5;
+  }
+
+  .cta-button {
+    display: block;
+    width: 200px;
+    margin: 50px auto 60px;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(41, 128, 185, 0.4);
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #3498db;
+  }
+
+  @media (max-width: 650px) {
+    .features-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>EduTrack</h1>
+  <p>Your Companion for Academic Success</p>
+</header>
+
+<section>
+  <h2>Main Features</h2>
+  <p class="intro">
+    EduTrack is designed to make student progress management seamless and motivating. Explore the core functionalities that will help you achieve your academic goals efficiently.
+  </p>
+
+  <div class="features-container">
+    <div class="feature-card">
+      <h3>Assignment Submissions with Deadlines</h3>
+      <p>Submit assignments on time and keep track of upcoming deadlines with automated reminders and status updates.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Visual Analytics of Grades and Progress</h3>
+      <p>Understand your academic performance better with detailed charts and progress reports tailored to your courses.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Feedback Loops Between Teacher and Student</h3>
+      <p>Receive personalized feedback and communicate efficiently with teachers to improve your learning experience.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Classroom Notifications</h3>
+      <p>Stay updated with real-time notifications about class announcements, events, and important deadlines.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Study Goal Planner</h3>
+      <p>Set achievable study goals, manage your schedule, and stay motivated with built-in goal tracking tools.</p>
+    </div>
+  </div>
+
+  <button class="cta-button">Get Started</button>
+</section>
+
+</body>
+</html>
