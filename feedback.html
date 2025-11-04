@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e3f2fd;
+      padding: 30px;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      width: 50%;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      text-align: center;
+      color: #1976d2;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #333;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 15px;
+      background-color: #1976d2;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+  <form action="submit_feedback.html" method="post">
+    <h2>Feedback Form</h2>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="rating">Rate our service:</label>
+    <select id="rating" name="rating" required>
+      <option value="">Select rating</option>
+      <option value="Excellent">Excellent</option>
+      <option value="Good">Good</option>
+      <option value="Average">Average</option>
+      <option value="Poor">Poor</option>
+    </select>
+
+    <label for="comments">Your Feedback:</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Write your feedback here..."></textarea>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+</body>
+</html>
